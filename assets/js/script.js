@@ -1,19 +1,13 @@
-// function majuscule() {
+function majuscule(message) {
 
-//     let message = prompt("Ecrivez un mot")
+    message = message.toLowerCase().split('')
+    message[0] = message[0].toUpperCase()
+    message = message.join('')
+    return alert(message)
 
-//     phrase = message.toLowerCase().split('')
-//     phrase[0] = phrase[0].toUpperCase()
-//     phrase = phrase.join('')
-//     return phrase
+}
 
-// }
-
-// alert(majuscule())
-
-
-
-
+// majuscule(prompt("Ecrivez un mot"))
 
 function bienvenue(nom) {
 
@@ -21,4 +15,35 @@ function bienvenue(nom) {
 
 }
 
-bienvenue(prompt("Inscrivez votre nom"))
+// bienvenue(prompt("Inscrivez votre nom"))
+
+
+
+
+
+
+
+function majusculeOnClick() {
+
+    let message = prompt("Rentre un message")
+    message = message.toLowerCase().split('')
+    message[0] = message[0].toUpperCase()
+    message = message.join('')
+    return message != '' ? alert(message) : ''
+
+}
+
+
+function bienvenueOnClick() {
+
+    let nom = prompt("Rentre ton prénom")
+    return nom != '' ? alert(`Bonjour ${nom}, bienvenue à la formation DWWM`) : ''
+
+}
+
+
+function ecritOnClick() {
+    let phrase = prompt("Tu veux écrire quoi ???")
+    return document.write(phrase)
+}
+
